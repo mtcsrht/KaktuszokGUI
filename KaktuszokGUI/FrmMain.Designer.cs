@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             dgvCactus = new DataGridView();
-            btnDelete = new Button();
             id = new DataGridViewTextBoxColumn();
             koznapi_nev = new DataGridViewTextBoxColumn();
             vizigeny = new DataGridViewTextBoxColumn();
             fenyigeny = new DataGridViewTextBoxColumn();
+            btnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCactus).BeginInit();
             SuspendLayout();
             // 
@@ -43,29 +43,18 @@
             dgvCactus.AllowUserToDeleteRows = false;
             dgvCactus.AllowUserToResizeColumns = false;
             dgvCactus.AllowUserToResizeRows = false;
-            dgvCactus.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dgvCactus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvCactus.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCactus.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCactus.Columns.AddRange(new DataGridViewColumn[] { id, koznapi_nev, vizigeny, fenyigeny });
             dgvCactus.Location = new Point(12, 12);
+            dgvCactus.MultiSelect = false;
             dgvCactus.Name = "dgvCactus";
             dgvCactus.RowHeadersVisible = false;
             dgvCactus.RowTemplate.Height = 25;
+            dgvCactus.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCactus.Size = new Size(776, 340);
             dgvCactus.TabIndex = 0;
-            // 
-            // btnDelete
-            // 
-            btnDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnDelete.BackColor = Color.Red;
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(12, 367);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(776, 71);
-            btnDelete.TabIndex = 1;
-            btnDelete.Text = "Törlés";
-            btnDelete.UseVisualStyleBackColor = false;
             // 
             // id
             // 
@@ -90,6 +79,19 @@
             fenyigeny.FillWeight = 126.56514F;
             fenyigeny.HeaderText = "Fényigény";
             fenyigeny.Name = "fenyigeny";
+            // 
+            // btnDelete
+            // 
+            btnDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnDelete.BackColor = Color.Red;
+            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(12, 367);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(776, 71);
+            btnDelete.TabIndex = 1;
+            btnDelete.Text = "Törlés";
+            btnDelete.UseVisualStyleBackColor = false;
             // 
             // FrmMain
             // 
